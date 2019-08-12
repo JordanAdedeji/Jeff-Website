@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jefferson Maranan</title>
+
+
+
+      <link rel="stylesheet" href="./style.css">
+      <link rel="stylesheet" href="./aos.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
+      <script src="https://kit.fontawesome.com/f22bd368d8.js"></script>
+      
+
+
+</head>
+
+  <header class="v-header container">
+
+    <div class="fullscreen-video-wrap">
+      <video src="intro.mp4"  autoplay="true" loop="true"  muted>
+    </video>
+    </div>
+
+    <div class="header-overlay"></div>
+
+    <body>
+
+    <div class="header-content text-md-center">
+      <h1>LATEST WORK</h1>
+      
+
+      <div class="btn2-box">
+        <a href="video.html" class= "btn2">
+          New Videos
+          
+        </a>
+      </div>
+
+    </div>
+
+  </header>
+
+  <div class ="navbar">
+    <a class="toggle" id="navHamburger" style="cursor: pointer;">
+      <i class="fas fa-bars"></i>
+    </a>
+
+    <img src="./img/logo.png" class="logo">
+
+    <div id="top" class="right borderXwidth">
+      <a href="#top" class="link"> Home </a>
+      <a href="#bio" class="link"> Bio </a>
+      <a href="video.html" class="link"> Portfolio </a>
+      <a href="#contact" class="link"> Contact </a>
+      <a href="https://www.instagram.com/jeff.maranan/?hl=en" class="link"> <i class="fab fa-instagram"></i> </a>
+      <a href="https://www.youtube.com/user/OneUpisodes" class="link"> <i class="fab fa-youtube"></i> </a>
+      
+    </div>
+
+  </div>
+
+  <section id="bio" class="section section-a">
+    <div class="second container container1" data-aos="fade-up">
+      <h2 >Jefferson Maranan</h2>
+      <h2 class="titles">Videographer, Filmmaker, Editor</h2>
+      <p class="intro-text">London based videographer trying to make an imprint on the world through my creative outlet of shooting and editing videos! Sony camera shooter and drone pilot handler. I use Adobe premiere and after effects. Final cut pro user too. I shoot sport-based videos and luxury travel videos. Personal and commercial shoots.</p>
+      
+    </div>
+
+    <div class="second fullscreen-video-wrap2">
+      <video src="football.mp4"  autoplay="true" loop="true"  muted  class="video2">
+    </video>
+    </div>
+  </section>
+
+
+  <section id="contact" class="section section-b">
+    <div class="container3">
+      <div class="wrapper animated bounceInLeft">
+        <div class="contact">
+          <h3>Email Me</h3>
+          <form action="contactform.php" method="post">
+            <p>
+              
+                <input reuired type="text" name="name" placeholder="Full Name">
+            </p>
+            <p>
+                
+                <input required type="text" name="company" placeholder="Company">
+            </p>
+            <p>
+                
+                <input required type="email" name="email" placeholder="Email">
+            </p>
+            <p>
+                
+                <input type="tel" name="phone" placeholder="Phone Number (Optional)">
+            </p>
+            <p class="full">
+                
+                <textarea name="message" rows="4" placeholder="Can't wait to hear from you!"></textarea>
+            </p>
+            <p class="full submit">
+              <button type="submit" name="submit">Send</button>
+            </p>
+
+
+          </form>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+
+</body>
+<script>
+  const navHamburger = document.querySelector("#navHamburger");
+  navHamburger.addEventListener('click', (e) => {
+    navHamburger.parentElement.classList.toggle('active');
+  })
+</script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="./aos.js"></script>
+<script type="text/javascript">
+  AOS.init({
+    duration: 2000,
+  });
+</script>
+</html>
