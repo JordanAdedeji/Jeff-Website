@@ -415,10 +415,10 @@ textarea::-webkit-input-placeholder {
   height: 62px;
 }
 
-iframe{
+/* iframe{
   position: relative !important;
   right: 50px !important;
-}
+} */
 
 
 @media(min-width:1200px){
@@ -591,6 +591,14 @@ iframe{
 
 }
 
+@media(min-width:768px){
+
+iframe{
+  position: relative !important;
+  right: 50px !important;
+}
+}
+
 
 @media(max-width:768px){
 
@@ -758,28 +766,36 @@ iframe{
   }
 
 
-  iframe{
+  /* iframe{
     max-width: 400px !important;
     left: 1px;
 
+  } */
+
+  .modal-body{
+    display: flex !important;
   }
 
+  iframe{
+    justify-content: center !important;
+    margin: 0 auto;
+  }
 
 
 }
 
 @media(max-width:414px){
-  iframe{
+  /* iframe{
   max-width: 320px !important;
   left: -10px;
-  }
+  } */
 
 }
 
 @media(max-width:411px){
-  iframe{
+  /* iframe{
   left: 1px;
-  }
+  } */
 }
 
 
@@ -829,8 +845,8 @@ iframe{
 }
 
 iframe{
-  max-width: 320px !important;
-  left: -33px;
+  max-width: 314px !important;
+  padding-right: 40px;
   }
 
 }
