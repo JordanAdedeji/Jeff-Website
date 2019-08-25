@@ -11,6 +11,7 @@
       <link rel="stylesheet" href="./style.css">
       <link rel="stylesheet" href="./aos.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <script src="https://kit.fontawesome.com/f22bd368d8.js"></script>
       
 
@@ -34,7 +35,7 @@
 
       <div class="btn2-box">
         <a href="video.html" class= "btn2">
-          New Videos
+          Client Work
           
         </a>
       </div>
@@ -44,14 +45,15 @@
   </header>
 
   <div class ="navbar">
-    <a class="toggle" id="navHamburger" style="cursor: pointer;">
-      <i class="fas fa-bars"></i>
-    </a>
-
+      <a href="javascript:void(0);" id="navHamburger" class="icon toggle" onclick="myFunction()">
+          <i class="fas fa-bars"></i>
+        </a>
+     
     <img src="./img/logo.png" class="logo">
+  
 
     <div id="top" class="right borderXwidth">
-      <a href="#top" class="link"> Home </a>
+      <a href="#top" class="link active"> Home </a>
       <a href="#bio" class="link"> Bio </a>
       <a href="video.html" class="link"> Portfolio </a>
       <a href="#contact" class="link"> Contact </a>
@@ -118,10 +120,14 @@
 
 </body>
 <script>
-  const navHamburger = document.querySelector("#navHamburger");
-  navHamburger.addEventListener('click', (e) => {
-    navHamburger.parentElement.classList.toggle('active');
-  })
+  function myFunction() {
+  var x = document.getElementById("top");
+  if (x.className === "right") {
+    x.className += " responsive";
+  } else {
+    x.className = "right";
+  }
+}
 </script>
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script src="./aos.js"></script>

@@ -23,13 +23,13 @@
 
 
   <div class ="navbar the-nav">
-    <a class="toggle toggle-jeff" id="navHamburger" style="cursor: pointer;">
-      <i class="fas fa-bars"></i>
-    </a>
+      <a href="javascript:void(0);" id="navHamburger" class="icon toggle" onclick="myFunction()">
+          <i class="fas fa-bars"></i>
+        </a>
 
     <img src="./img/logo.png" class="logo logo-jeff">
 
-    <div class="right borderXwidth">
+    <div id ="top" class="right borderXwidth">
       <a href="index.html" class="link"> Home </a>
       <a href="index.html#bio" class="link"> Bio </a>
       <a href="#portfolio" class="link"> Portfolio </a>
@@ -167,10 +167,14 @@
 
 </body>
 <script>
-  const navHamburger = document.querySelector("#navHamburger");
-  navHamburger.addEventListener('click', (e) => {
-    navHamburger.parentElement.classList.toggle('active');
-  })
+  function myFunction() {
+  var x = document.getElementById("top");
+  if (x.className === "right") {
+    x.className += " responsive";
+  } else {
+    x.className = "right";
+  }
+}
 </script>
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script src="./aos.js"></script>
