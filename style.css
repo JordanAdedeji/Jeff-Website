@@ -696,6 +696,10 @@ iframe{
   .toggle{
     display: none !important;
   }
+
+  .link{
+    opacity: 0.9;
+  }
 }
 
 
